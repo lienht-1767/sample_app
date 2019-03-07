@@ -18,10 +18,37 @@ en:
       name_app: "Sample App"
       p1: "This is the home page for the "
       p2: "Ruby on Rails Tutorial sample application."
+      welcome: "Welcome to the Sample App"
+      p3: "Ruby on Rails Tutorial"
+      p4: "sample application"
+      image: "rails.png"
+      logo: "Rails logo"
+      sign_up: "Sign up now!"
     help:
       help: "Help"
       p1: "This is the home page for the "
       p2: "Ruby on Rails Tutorial sample application."
+    contact:
+      contact: "Contact"
+      text_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page"
+  users:
+    new:
+      sign_up: "Sign up"
+      text_signup: "This will be a signup page for new users."
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      title_logo: "sample app"
+      home: "Home"
+      help: "Help"
+      log_in: "Log in"
+    footer:
+      the: "The"
+      tut: "Ruby on Rails Tutorial"
+      by: "by"
+      author: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
