@@ -1,0 +1,7 @@
+vi:
+  static_pages:
+    about:
+      abc: "About"
+    home:
+      base_title: "Ruby on Rails Tutorial Sample App"
+      home: "Trang chu"
