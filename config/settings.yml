@@ -2,3 +2,5 @@ url_tutorial: "https://www.railstutorial.org/"
 book: "https://www.railstutorial.org/book"
 screen: "http://screencasts.railstutorial.org/"
 url_contact: "https://www.railstutorial.org/contact"
+max_name: 50
+min_name: 6
