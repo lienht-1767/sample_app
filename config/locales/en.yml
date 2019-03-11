@@ -36,6 +36,12 @@ en:
     new:
       sign_up: "Sign up"
       text_signup: "This will be a signup page for new users."
+      confir: "Confirmation"
+      create_btn: "Create my account"
+    create:
+      welcome: "Welcome to the Sample App!"
+    show:
+      error_message: "User doesn't exist"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -52,3 +58,6 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+  shared:
+    error_messages:
+      error: "error"

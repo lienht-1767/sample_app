@@ -4,3 +4,4 @@ screen: "http://screencasts.railstutorial.org/"
 url_contact: "https://www.railstutorial.org/contact"
 max_name: 50
 min_name: 6
+size_img: 80
