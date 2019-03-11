@@ -50,6 +50,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      log_out: "Log out"
     footer:
       the: "The"
       tut: "Ruby on Rails Tutorial"
@@ -61,3 +66,9 @@ en:
   shared:
     error_messages:
       error: "error"
+  sessions:
+    new:
+      login_title: "Log in"
+      new_user: "New user?"
+    create:
+      invalid: "Invalid email/password combination"
