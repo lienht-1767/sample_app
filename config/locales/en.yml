@@ -38,6 +38,7 @@ en:
       text_signup: "This will be a signup page for new users."
       confir: "Confirmation"
       create_btn: "Create my account"
+      remember_me: "Remember me on this computer"
     create:
       welcome: "Welcome to the Sample App!"
     show:
