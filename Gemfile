@@ -23,6 +23,9 @@ gem "bcrypt", "3.1.12"
 gem "awesome_print", require:"ap"
 gem "bootstrap", "~> 4.0"
 gem "jquery-rails", "~> 4.3", ">= 4.3.1"
+gem "ffaker", "~> 2.2"
+gem "kaminari"
+gem "bootstrap-kaminari-views"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
