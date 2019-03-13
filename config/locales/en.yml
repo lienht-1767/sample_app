@@ -33,16 +33,30 @@ en:
       text_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
   users:
+    index:
+      all_users: "All users"
+      notification: "Please log in."
     new:
       sign_up: "Sign up"
       text_signup: "This will be a signup page for new users."
-      confir: "Confirmation"
       create_btn: "Create my account"
       remember_me: "Remember me on this computer"
     create:
       welcome: "Welcome to the Sample App!"
     show:
       error_message: "User doesn't exist"
+    edit:
+      edit_user: "Edit user"
+      save_change: "Save changes"
+      update_profile: "Update your profile"
+      change: "Change"
+      notification: "Please log in."
+    update:
+      updated: "Profile updated"
+    user:
+      confirm: "You sure?"
+    destroy:
+      user_deleted: "User deleted"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -64,6 +78,8 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+    form:
+      confir: "Confirmation"
   shared:
     error_messages:
       error: "error"
