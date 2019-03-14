@@ -5,6 +5,6 @@ url_contact: "https://www.railstutorial.org/contact"
 max_name: 50
 min_name: 6
 size_img: 80
-remember_me: "1"
+remember_me: 1
 edit_user: "http://gravatar.com/emails"
 per_page_user: 5
