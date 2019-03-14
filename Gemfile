@@ -9,11 +9,9 @@ gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "byebug"
-
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
-
 gem "bootsnap", ">= 1.1.0", require: false
 gem "i18n"
 gem "i18n-js"
@@ -26,6 +24,7 @@ gem "jquery-rails", "~> 4.3", ">= 4.3.1"
 gem "ffaker", "~> 2.2"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

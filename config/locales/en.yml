@@ -43,6 +43,7 @@ en:
       remember_me: "Remember me on this computer"
     create:
       welcome: "Welcome to the Sample App!"
+      check_email: "Please check your email to activate your account."
     show:
       error_message: "User doesn't exist"
     edit:
@@ -89,3 +90,14 @@ en:
       new_user: "New user?"
     create:
       invalid: "Invalid email/password combination"
+      inactivated: "Account not activated."
+      check_active: "Check your email for the activation link."
+  account_activations:
+    activated: "Account activated!"
+    inactivated: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi, %{user_name}"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
