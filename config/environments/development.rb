@@ -71,4 +71,6 @@ Rails.application.configure do
     user_name: ENV["MAIL_USERNAME"],
     password: ENV["MAIL_PASSWORD"]
   }
+  # i18n-js
+  config.middleware.use I18n::JS::Middleware
 end
