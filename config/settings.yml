@@ -6,6 +6,11 @@ max_name: 50
 min_name: 6
 size_img: 80
 remember_me: 1
-edit_user: "http://gravatar.com/emails"
+edit_gravavar: "http://gravatar.com/emails"
 per_page_user: 5
 time_expired: 2
+image: "image/jpeg,image/gif,image/png"
+content_max: 140
+size: 5
+size_avatar: 50
+size_image_micropost: [400,400]

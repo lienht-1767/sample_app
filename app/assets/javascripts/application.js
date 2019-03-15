@@ -11,6 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require i18n
+//= require i18n.js
+//= require i18n/translations
+//= require micropost
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
