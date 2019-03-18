@@ -61,8 +61,17 @@ en:
       updated: "Profile updated"
     user:
       confirm: "You sure?"
+      delete: "delete"
     destroy:
       user_deleted: "User deleted"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -95,6 +104,12 @@ en:
       post: "Post"
     user_info:
       profile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
+    show_follow:
+      microposts: "Microposts:"
+      view_profile: "view my profile"
   sessions:
     new:
       login_title: "Log in"
@@ -146,5 +161,5 @@ en:
       delete: "delete"
       sure: "You sure?"
       time_posted: "Post %{text} ago."
-    alert:
-      max_file_size: "Maximum file size is 5MB. Please choose a smaller file."
+  relationships:
+    error_follow: "User does not exist"
