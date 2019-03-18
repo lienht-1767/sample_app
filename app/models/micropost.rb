@@ -9,6 +9,7 @@ class Micropost < ApplicationRecord
   scope :feed, ->(user_id) {where user_id: user_id}
 
   private
+
   def picture_size
     return unless picture.size > Settings.size.megabytes
     errors.add :picture, I18n.t(".microposts.picture_size.size")

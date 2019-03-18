@@ -1,13 +1,22 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
-
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+                                  foreign_key: :follower_id,
+                                  dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+                                   foreign_key: :followed_id,
+                                   dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :name, presence: true, length: {maximum: Settings.max_name}
-  validates :email, presence: true, length: {maximum: Settings.max_name}, format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.min_name, maximum: Settings.max_name}
+  validates :email, presence: true, length: {maximum: Settings.max_name},
+    format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
+  validates :password, presence: true, length: {minimum: Settings.min_name,
+    maximum: Settings.max_name}
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -63,7 +72,25 @@ class User < ApplicationRecord
     reset_sent_at < Settings.time_expired.hours.ago
   end
 
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete(other_user)
+  end
+
+  def following?(other_user)
+    following.include?(other_user)
+  end
+
+  def feed
+    following_ids = Relationship.where(follower_id: id).pluck :followed_id
+    Micropost.where(user_id: following_ids).or(Micropost.where user_id: id)
+  end
+
   private
+
   def downcase_email
     email.downcase!
   end
